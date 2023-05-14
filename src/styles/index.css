@@ -16,8 +16,8 @@ font-family: 'Wix Madefor Display', sans-serif;
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
-    --lgr:40px;
-    --lgst:60px;
+    --lgr: 40px;
+    --lgst: 60px;
 }
 
 body {
@@ -40,8 +40,12 @@ nav {
     gap: 50px;
 }
 
+.navContent {
+    display: flex;
+    gap: 20px;
+}
+
 .navContainer a {
-    width: 608px;
     height: var(--lgr);
     margin: 0;
     text-decoration: none;
@@ -49,6 +53,9 @@ nav {
     font-weight: 500;
     font-size: 20px;
     color: var(--justGray);
+}
+.navContainer a:hover {
+    color: var(--dark);
 }
 
 .titleContainer {
@@ -69,12 +76,10 @@ nav {
     font-family: "Wix Madefor Display", sans-serif;
 }
 
-
 .photoContainer {
     width: 400px;
     height: 400px;
 }
-
 
 .photoContainer img {
     width: 400px;
@@ -90,6 +95,11 @@ nav {
         rgba(255, 255, 255, 1) 0%,
         rgba(255, 255, 255, 0) 25%
     );
+}
+@media(max-width : 1054px){
+    body{
+        margin: 0 0 0 0;
+    }
 }
 /* ------------------------Mid Section CSS --------------------- */
 .midSection h1 span {
@@ -143,27 +153,35 @@ nav {
     cursor: pointer;
 }
 /* ------------------------- Bottom Section ---------------------- */
-.bottomSection{
+.bottomSection {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-.contact{
+.contact {
     font-size: 30px;
 }
-.contact p{
+.contact p {
     margin: 5px;
 }
 
-.contact p:last-child{
+.contact p:last-child {
     color: var(--softPurple);
 }
 
-.media{
+.media {
     display: flex;
 }
-.media img{
+.media img {
     height: 40px;
     margin: 5px;
 }
+/* ------------------------------PROJECTS.HTML------------------------- */
+.technologies{
+    display: flex;
+    gap: 10px;
+}
 
+.technologies img{
+    width: 60px;
+}
